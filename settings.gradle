@@ -1,0 +1,9 @@
+rootProject.name = 'GradleMultiModuleApp'
+include 'sampleController'
+include 'sampleServices'
+include 'sampleRepository'
+
+project(':sampleController').projectDir = file('sampleController')
+project(':sampleServices').projectDir = file('sampleServices')
+project(':sampleRepository').projectDir = file('sampleRepository')
+
